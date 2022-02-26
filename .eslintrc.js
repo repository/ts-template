@@ -1,7 +1,7 @@
 module.exports = {
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint/eslint-plugin", "simple-import-sort"],
-  extends: ["plungin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
+  plugins: ["@typescript-eslint/eslint-plugin"],
+  extends: ["plugin:@typescript-eslint/recommended", "plugin:prettier/recommended"],
   root: true,
   env: {
     node: true,
