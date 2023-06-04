@@ -1,13 +1,35 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "incremental": true,
+
     "target": "ESNext",
     "module": "ESNext",
     "lib": ["ESNext"],
+    "jsx": "react",
+
     "moduleResolution": "nodenext",
     "resolveJsonModule": true,
+
+    "strict": true,
+    "allowUnusedLabels": false,
+    "allowUnreachableCode": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
     "outDir": "dist",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "baseUrl": ".",
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
