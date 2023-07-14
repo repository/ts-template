@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "tsc-watch --onSuccess \"node dist/main.js\"",
+    "dev": "tsx watch src/main.ts",
     "start": "node dist/main.js",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -16,14 +16,14 @@
   "license": "MIT",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.1.1",
-    "@types/node": "^20.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.59.6",
-    "@typescript-eslint/parser": "^5.59.6",
-    "eslint": "^8.41.0",
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
     "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.8",
-    "tsc-watch": "^6.0.4",
-    "typescript": "^5.0.4"
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6"
   }
 }

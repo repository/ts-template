@@ -7,7 +7,7 @@
     "lib": ["ESNext"],
     "jsx": "react",
 
-    "moduleResolution": "nodenext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
 
     "strict": true,
@@ -26,10 +26,11 @@
     "forceConsistentCasingInFileNames": true,
 
     "outDir": "dist",
+    "baseUrl": "src",
+
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["*"],
     },
-    "baseUrl": ".",
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]
